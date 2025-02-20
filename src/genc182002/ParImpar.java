@@ -15,7 +15,8 @@ public class ParImpar {
 //        }
 
         //VERSION CON OPERADORES TERNARIOS
-        String mensaje = (numero % 2 == 0) ? "Par" : "Impar";
+        //String mensaje = (numero % 2 == 0) ? "Par" : "Impar";
+        String mensaje = (numero== 0) ? "El 0 ya es par?Really?" : (numero%2==0)? "Ese numero ya es par" :  "Impar";
         System.out.println(mensaje);
         entrada.close(); //NO OLVIDAR CERRAR EL Scanner!!!!!!!!!!!
     }
