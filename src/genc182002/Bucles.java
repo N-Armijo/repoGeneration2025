@@ -15,7 +15,7 @@ public class Bucles {
         }
         System.out.println("Despegue");
 
-    //Bucle Do-While -> permite qur unque la condicion sea falsa se ejecute al menos una vez
+        //Bucle Do-While -> permite qur unque la condicion sea falsa se ejecute al menos una vez
         Scanner entrada = new Scanner(System.in);
         Integer numeroMisterioso = (int) (Math.random() * 10) + 1; // -> recibe un double, pero lo casteo (transformo) a un int
         Integer numeroElegido;
@@ -34,8 +34,5 @@ public class Bucles {
                 System.out.println("El numero es menor");
             }
         }while (!numeroMisterioso.equals(numeroElegido));
-
-
     }
-
 }

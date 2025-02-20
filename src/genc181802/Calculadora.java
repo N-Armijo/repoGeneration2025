@@ -11,14 +11,16 @@ public class Calculadora {
 
         do {
             try {
-                System.out.println("\nBienvenido a la genc181802.Calculadora en Java");
-                System.out.println("Por favor, selecciona una operación:");
-                System.out.println("1. Suma");
-                System.out.println("2. Resta");
-                System.out.println("3. Multiplicación");
-                System.out.println("4. División");
-                System.out.println("5. Potencia");
-                System.out.println("6. Salir");
+                System.out.println("""
+                \nBienvenido a la Calculadora
+                Por favor, selecciona una operación:
+                1. Suma
+                2. Resta
+                3. Multiplicación
+                4. División
+                5. Potencia
+                6. Salir
+                """);
 
                 int opcion = scanner.nextInt();
 
