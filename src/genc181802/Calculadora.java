@@ -6,8 +6,6 @@ import java.util.Scanner;
 public class Calculadora {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        boolean continuar = true;
-
 
         do {
             try {
@@ -25,7 +23,6 @@ public class Calculadora {
                 int opcion = scanner.nextInt();
 
                 if (opcion == 6) {
-                    continuar = false; // Salir del bucle
                     System.out.println("Gracias por usar la calculadora. ¡Hasta luego!");
                     break;
                 }
@@ -70,8 +67,7 @@ public class Calculadora {
                 System.out.println("Error: Entrada no válida. Por favor, ingresa números válidos.");
                 scanner.next(); // Limpiar el buffer del scanner
             }
-        } while (continuar);
-
+        } while (true);
         scanner.close(); // Cerrar el scanner al finalizar
     }
 }
