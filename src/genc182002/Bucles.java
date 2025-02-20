@@ -34,5 +34,15 @@ public class Bucles {
                 System.out.println("El numero es menor");
             }
         }while (!numeroMisterioso.equals(numeroElegido));
+
+        /***** BUCLE FOR ******/
+        for (int i = 1; i <= 20; i++) {
+            System.out.println("Contando: " + i);
+        }
+        //PROGRAMA DE DESPEGUE EN BUCLE FOR
+        for (int i = 10; i >= 0; i--) {
+            System.out.println("Contando: " + i);
+        }
+
     }
 }

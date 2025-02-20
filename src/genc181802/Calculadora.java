@@ -19,22 +19,16 @@ public class Calculadora {
                 5. Potencia
                 6. Salir
                 """);
-
                 int opcion = scanner.nextInt();
-
                 if (opcion == 6) {
                     System.out.println("Gracias por usar la calculadora. ¡Hasta luego!");
                     break;
                 }
-
                 System.out.println("Ingresa el primer número:");
                 double num1 = scanner.nextDouble();
-
                 System.out.println("Ingresa el segundo número:");
                 double num2 = scanner.nextDouble();
-
                 double resultado = 0;
-
                 switch (opcion) {
                     case 1:
                         resultado = num1 + num2;
@@ -60,9 +54,7 @@ public class Calculadora {
                         System.out.println("Opción no válida. Intenta de nuevo.");
                         continue; // Volver al inicio del bucle
                 }
-
                 System.out.println("El resultado es: " + resultado);
-
             } catch (InputMismatchException e) {
                 System.out.println("Error: Entrada no válida. Por favor, ingresa números válidos.");
                 scanner.next(); // Limpiar el buffer del scanner
