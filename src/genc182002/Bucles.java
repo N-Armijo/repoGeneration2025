@@ -26,14 +26,14 @@ public class Bucles {
             System.out.println("Ingrese un numero entero del 1 al 10: ");
             String numero = entrada.nextLine();
             numeroElegido = Integer.parseInt(numero); // -> hace un casteo de datos. Saca el numero del mensaje -> este metodo es una vuelta larga
-            if (numeroElegido == numeroMisterioso) {
+            if (numeroElegido.equals(numeroMisterioso)) {
                 System.out.println("Felicidades, adivinaste.\nNumero de intentos: " + contadorDeIntentos    );
             } else if (numeroElegido < numeroMisterioso) {
                 System.out.println("El numero es mayor");
             } else {
                 System.out.println("El numero es menor");
             }
-        }while (numeroMisterioso != numeroElegido);
+        }while (!numeroMisterioso.equals(numeroElegido));
 
 
     }
