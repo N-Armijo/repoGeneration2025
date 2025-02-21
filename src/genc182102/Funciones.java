@@ -15,7 +15,7 @@ public class Funciones {
         segundoNombre = sc.nextLine();
         System.out.println("Hola, " + segundoNombre + "!");//Aqui solo puede acceder a lo que dice static. Sino lo tiene , La clase no sabe que le pertenece
 
-        sc.close(); //Cierro la instancia
+        //sc.close(); //Cierro la instancia
     }
 
     //funciones que no son estaticas requieren de instanciar la clase
@@ -27,6 +27,13 @@ public class Funciones {
     public static int resta (int a, int b){
         return a-b;
     }
+
+    //Sobrecarga de metodos consiste en agregarle argumentos o tipos de datos de retorno
+    //Redeclarar un metodo volviendo a indicar sus argumentos o tipo de retorno, con distintos tipos de datos
+    public double suma(double a, double b){
+        return a+b;
+    }
+
     public static void main(String[] args) {
         saludo(); //LLamo a la funcion
         //Creo primero la instancia
@@ -39,9 +46,10 @@ public class Funciones {
         //Esto es un ejemplo de una clase estatica porque le pertenece a la clase Math
         Math.random();
 
-        Scanner miOtroScanner = new Scanner(System.in);
+        //Scanner miOtroScanner = new Scanner(System.in);
         //La funcion nextLine viene a ser un ejemplo de funcion de instancia
-        String nombre = miOtroScanner.nextLine();
-        miOtroScanner.close();
+        //String nombre = miOtroScanner.nextLine();
+        //miOtroScanner.close();
+        System.out.println("El resultado de la suma con decimales, despues de sobrecargar el mismo metodo " + miFuncion.suma(10.5,10.7));
     }
 }
