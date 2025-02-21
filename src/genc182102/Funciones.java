@@ -14,6 +14,8 @@ public class Funciones {
         System.out.println("Ingrese tu segundo nombre: ");
         segundoNombre = sc.nextLine();
         System.out.println("Hola, " + segundoNombre + "!");//Aqui solo puede acceder a lo que dice static. Sino lo tiene , La clase no sabe que le pertenece
+
+        sc.close(); //Cierro la instancia
     }
 
     //funciones que no son estaticas requieren de instanciar la clase
@@ -40,5 +42,6 @@ public class Funciones {
         Scanner miOtroScanner = new Scanner(System.in);
         //La funcion nextLine viene a ser un ejemplo de funcion de instancia
         String nombre = miOtroScanner.nextLine();
+        miOtroScanner.close();
     }
 }
