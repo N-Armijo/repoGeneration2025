@@ -21,5 +21,6 @@ public class BucleFor {
         System.out.println(miFuncion.apellido);// -> Solo puede acceder porque es publica
         System.out.println(Funciones.segundoNombre);// -> Static Solo se accede desde la clase misma, NO una INSTANCIA
         //System.out.println(miFuncion.segundoApellido);// -> No es accesible, ya que Solo se accede desde la clase misma, clases HIJAS o mismo PACKAGE
+        System.out.println(miFuncion.suma(10,10));
     }
 }
