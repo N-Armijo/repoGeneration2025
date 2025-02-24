@@ -53,6 +53,11 @@ public class MetodosJava {
         //Para formatear de acuerdo al lugar donde vivo
         DateTimeFormatter fechaFormateada = DateTimeFormatter.ofPattern("dd/MM/yyyy");//Convencion para no confundir es MM mayuscula para mes y no confundir con minues mm que es minuscula
         System.out.println("La fecha formateada de hoy: " + fechaFormateada.format(hoy));
+
+        //Fragmento codigo instructor
+        //System.out.println("El resultado de comparar el DayOfTheWeek con el String MONDAY " + ("MONDAY".equals(String.valueOf(fechaDeHoy.getDayOfWeek()))));
+        //Llamamos al método .format() y al método ofPattern() de la clase DateTimeFormatter para formatear la fecha actual
+        System.out.println("Formato de la fecha: (dd/MM/yyyy) " + hoy.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
     }
     public static void main(String[] args) {
         llamadoMetodosMath();
