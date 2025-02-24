@@ -42,5 +42,23 @@ public class ArreglosEstaticos {
             System.out.println("Elemento en este momento tiene un valor de " + elemento);
         }
 
+        //Calcular la suma de los numeros del arreglo empty
+        int suma = 0;
+
+        //sintaxis foreach -> for +(variable con la que voy a referirme a cada elemento : nombreDelArreglo){})
+        for(int elemento : empty){
+            suma += elemento;
+            System.out.println("Elemento en este momento la suma tiene un valor de " + suma);
+        }
+        System.out.println("Valor suma total del arreglo " + suma);
+
+        String mensaje = "";
+        String[] arregloPalabras = {"Hola",",","Toffee",".","Estoy","mirando","por","la","ventana"};
+        for (String palabra : arregloPalabras){
+            mensaje += palabra+" ";
+            System.out.println("Palabra actual"+ palabra);
+        }
+        System.out.println(mensaje);
+
     }
 }
