@@ -42,12 +42,22 @@ public class MetodosJava {
     public static void llamadoMetodosFechas(){
         //clase para almacenar fecha, inicializamos con fecha actual
         LocalDate hoy = LocalDate.now();
+        System.out.println("La fecha de hoy: " + hoy);
+//        LocalDate hoy = LocalDate.;//tambien hay otros metodos para comparar fechas mas actuales
+
+        //PAra obtener el year
+        System.out.println("El year es " + hoy.getYear());//PAra obtener el year
+        System.out.println("El mes es " + hoy.getMonth());//PAra obtener el mes
+        System.out.println("El year es " + hoy.getDayOfMonth());//PAra obtener eldia del mes
+        System.out.println("El year es " + hoy.getDayOfWeek()); //trae el dia de la semana con palabras  *****VER CLASE ENUM
         //Para formatear de acuerdo al lugar donde vivo
-        DateTimeFormatter fechaFormateada = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter fechaFormateada = DateTimeFormatter.ofPattern("dd/MM/yyyy");//Convencion para no confundir es MM mayuscula para mes y no confundir con minues mm que es minuscula
+        System.out.println("La fecha formateada de hoy: " + fechaFormateada.format(hoy));
     }
     public static void main(String[] args) {
         llamadoMetodosMath();
         llamadoMetodosString("Mariano" ,"MARIANO");
+        llamadoMetodosFechas();
     }
 
 }
