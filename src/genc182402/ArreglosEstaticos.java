@@ -56,7 +56,7 @@ public class ArreglosEstaticos {
         String[] arregloPalabras = {"Hola",",","Toffee",".","Estoy","mirando","por","la","ventana"};
         for (String palabra : arregloPalabras){
             mensaje += palabra+" ";
-            System.out.println("Palabra actual"+ palabra);
+            System.out.println("Palabra actual : "+ palabra);
         }
         System.out.println(mensaje);
 
