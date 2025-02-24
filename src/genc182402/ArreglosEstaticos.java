@@ -6,7 +6,6 @@ public class ArreglosEstaticos {
 
     //los arreglos en java son estaticos/fijos por naturaleza ->No puede aumentar, ni disminuir longitud del arreglo
     int[] miArregloD = {1,2,3,4,5};
-	int[] miArregloDeNumeros = new int [5]; //-> le esta indicando que va a tener largo 5
 
     public static void main(String[] args) {
     //Declaramos un arreglo de numeros
@@ -18,6 +17,13 @@ public class ArreglosEstaticos {
         //Para acceder a un indice en particular dentro del arreglo, puedo referirme a el por su posicion
         System.out.println("El elemento en el indice 5 es " + numerosDelUnoAlDiez[5]);//6
 
+        int[] miArregloVacio = new int [5]; //-> le esta indicando que va a tener largo 5
+        System.out.println("Mi arreglo de numeros vacio (con metodo del Arrays.toString(): " + Arrays.toString(miArregloVacio));
+        System.out.println("Mi arreglo de numeros vacio: " + miArregloVacio);
+        miArregloVacio[0] = 55;
+        System.out.println("Mi arreglo de numeros vacio que ya no esta vacio: " + Arrays.toString(miArregloVacio));
+        System.out.println("Mi arreglo de numeros vacio que ya no esta vacio, accediendo con un indice " + miArregloVacio[0]);
+//        System.out.println("Mi arreglo de numeros vacio que ya no esta vacio, pero indicando un indice que no existe: " + miArregloVacio[6]);//Arrojara una exception ArrayIndexOutOfBoundsException
 
     }
 }
